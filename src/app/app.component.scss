@@ -1,0 +1,50 @@
+.counter-wrapper {
+  height: 100vh;
+  background: #393e46;
+
+  .start-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1.counter-title {
+    font-size: 65px;
+    color: #fed053;
+    letter-spacing: 7px;
+    margin-bottom: 0;
+  }
+
+  .btn-start {
+    margin-top: 15px;
+    background: #facf5a;
+    color: #000;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 10px 30px;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 25px;
+    transition: all 150ms ease;
+
+    &:hover {
+      background: #ffdb78;
+      transition: all 150ms ease;
+    }
+  }
+
+  .tips {
+    color: #facf5a;
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+
+    code {
+      color: #fff;
+      display: inline-block;
+      border-bottom: 1px solid #fff;
+      line-height: 2;
+      padding: 0 10px;
+    }
+  }
+}

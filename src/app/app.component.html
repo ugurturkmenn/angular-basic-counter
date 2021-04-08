@@ -1,0 +1,24 @@
+<div class="counter-wrapper bg-dark d-flex justify-content-center flex-column align-items-center">
+  <div class="start-wrapper" *ngIf="!isStarted">
+    <h1 class="counter-title">
+      COUNTER
+    </h1>
+    <button class="btn btn-start" (click)="startCounter()">
+      START
+    </button>
+    <div class="tips">
+      If you want press <code>SPACE BUTTON</code> or <code>ENTER BUTTON</code>
+    </div>
+  </div>
+
+  <button *ngIf="isStarted" class="btn btn-start" (click)="resetCounter()">
+    RESET
+  </button>
+
+  <div class="count-wrapper" *ngIf="isStarted" (sendCountEvent)="updateCount()" appKeyup [appKeyupCount]="count">
+    <h1 class="counter-title">
+      {{ count }}
+    </h1>
+  </div>
+</div>
+<router-outlet></router-outlet>
